@@ -1,0 +1,18 @@
+[project]
+name = "backend"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi[standard]>=0.139.0",
+    "sqlalchemy>=2.0.0",
+    "python-multipart>=0.0.6",
+    "alembic>=1.13.0",
+    "bcrypt>=4.1.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-asyncio>=0.21.0",
+    "httpx>=0.25.0",
+]
